@@ -1,0 +1,88 @@
+
+/*!intro*/
+.intro{background-color: var(--color);margin-top: 70px;}
+.intro-box{width: 100%;float: left;display: flex;min-height: calc(100vh - 70px);}
+.bord-intro{width: 90%;display: grid;grid-template-columns: auto 400px;gap: 20px;margin: 40px auto;}
+.left-intro{float: left;display: flex;gap: 20px;}
+.hi{width: 100%;float: left;}
+.hi h1{font-size: 55px;color: var(--white);}
+.hi h4{font-size: 19px;color: var(--white);max-width: 500px;}
+.search{width: 100%;max-width: 500px;height: 50px;border-radius: 25px;background-color: var(--white);display: grid;grid-template-columns: auto minmax(60px , 140px);gap: 20px;}
+.left-search{height: 50px;float: left;}
+.left-search input{width: 100%;padding: 0px 20px;border-radius: 25px;height: 50px;}
+.right-search{height: 50px;float: right;display: flex;}
+.right-search button{height: 42px;width: calc(100% - 8px);float: left;background-color: var(--black);color: var(--white);border-radius: 25px;}
+.right-intro{float: right;display: flex;}
+.post-intro{width: 100%;float: left;border-radius: 25px;background-color: var(--white);}
+.top-post-intro{width: 100%;float: left;}
+.back-post{width: calc(100% - 40px);margin: 20px;margin-bottom: 0px;border-radius: 5px;aspect-ratio: 1/1;display: flex;background-color: #adffeb;}
+.back-post svg{width: 40%;height: 40%;fill: #97b0ff;}
+.bottom-post-intro{width: 100%;margin-top: 20px;float: left;}
+.info-post-intro{width: 100%;float: left;}
+.info-post-intro p{font-size: 17px;margin: 0px 20px;}
+.info-post-intro h1{font-size: 20px;margin: 0px 20px;margin-top: 10px;margin-bottom: 20px;}
+@media (max-width: 940px) {
+    .bord-intro{grid-template-columns: auto;}
+    .right-intro{justify-content: flex-end;}
+    .post-intro{max-width: 500px;}
+}
+
+/*!posts*/
+.title{text-align: center;}
+.title h1{font-size: 30px;}
+
+.post-box{display: grid;grid-template-columns: repeat(4 , 1fr);gap: 20px;margin-top: 40px;}
+.post{width: 100%;float: left;border-radius: 15px;background-color: var(--white);box-shadow: 0px 0px 4px 4px #ebebeb;}
+.top-post{width: 100%;float: left;}
+.top-post img{width: calc(100% - 20px);margin: 10px;margin-bottom: 0px;border-radius: 5px;}
+.bottom-post{width: 100%;margin-top: 10px;float: left;}
+.info-post{width: 100%;float: left;}
+.info-post p{font-size: 15px;margin: 0px 10px;}
+.info-post h1{font-size: 17px;margin: 0px 10px;margin-top: 5px;margin-bottom: 10px;}
+@media (max-width: 910px) {
+    .post-box{grid-template-columns: repeat(3 , 1fr);}
+}
+@media (max-width: 670px) {
+    .post-box{grid-template-columns: repeat(2 , 1fr);}
+}
+@media (max-width: 330px) {
+    .post-box{grid-template-columns: repeat(1 , 1fr);}
+}
+
+.room-box{display: flex;gap: 10px;margin-top: 40px;}
+.room-box button{width: 30px;height: 30px;border-radius: 5px;background-color: #dfdfdf;}
+.room-box .roomX{background-color: var(--color);color: var(--white);}
+
+
+/*!info*/
+.info-box{display: grid;grid-template-columns: 400px auto;gap: 30px;}
+.info-left{float: left;display: flex;}
+.info-left img{width: 100%;float: left;}
+.info-right{float: left;display: flex;gap: 20px;}
+.div-info{width: 100%;float: left;}
+.div-info h1{font-size: 40px;}
+.div-info p{font-size: 17px;max-width: 500px;}
+@media (max-width: 760px) {
+    .info-box{grid-template-columns: auto;}
+    .info-left , .info-right{width: 100%;max-width: 500px;}
+}
+
+/*!contact*/
+.contact-box{display: grid;grid-template-columns: auto 400px;gap: 20px;}
+.left-contact{float: left;display: flex;gap: 20px;}
+.div-contact{width: 100%;float: left;}
+.div-contact h1{font-size: 40px;max-width: 550px;}
+.div-contact p{max-width: 500px;}
+.div-contact button{height: 50px;padding: 0px 20px;border-radius: 25px;background-color: var(--black);color: var(--white);}
+.right-contact{float: right;display: flex;}
+.right-contact form{width: 100%;float: left;display: flex;gap: 20px;}
+.bord-inp{width: 100%;float: left;}
+.bord-inp input , .bord-inp textarea{width: 100%;height: 50px;float: left;padding: 0px 20px;box-sizing: border-box;border: 2px solid var(--black);border-radius: 25px;background-color: var(--white);}
+.bord-inp textarea{height: 200px;padding: 15px 20px;}
+.bord-inp button{height: 50px;padding: 0px 20px;border-radius: 25px;background-color: var(--black);color: var(--white);}
+.bord-inp input:focus:invalid , .bord-inp textarea:focus:invalid{border: 2px solid #ff4473;}
+.bord-inp input:focus:valid , .bord-inp textarea:focus:valid{border: 2px solid #54ff44;}
+@media (max-width: 760px) {
+    .contact-box{grid-template-columns: auto;}
+    .right-contact form{max-width: 500px;}
+}

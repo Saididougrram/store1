@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/home.css">
+    <title>store</title>
+</head>
+<body>
+    
+    <!--&header-->
+    <header>
+        <article class="wc-sb">
+            <div class="left-hed">
+                <div class="logo-bord wcc">
+                    <img src="src/img/post3.png" alt="">
+                </div>
+                <div class="name-bord wcc">
+                    <h1>Store.com</h1>
+                </div>
+            </div>
+            <div class="right-hed wc-sb">
+                <div class="nav">
+                    <ul class="wcc">
+                        <li>home</li>
+                        <li>colectibles</li>
+                        <li>information</li>
+                        <li>about us</li>
+                    </ul>
+                </div>
+                <div class="buttons wcc">
+                    <button>Start now</button>
+                </div>
+            </div>
+            <div class="right-hed2 wcc">
+                <img src="src/img/nav.png" alt="">
+            </div>
+        </article>
+    </header>
+    <!--&intro-->
+    <section class="intro">
+        <article class="intro-box wcc">
+            <div class="bord-intro">
+                <div class="left-intro wcc">
+                    <div class="hi">
+                        <h1 id="welcome">Welcome to our store</h1>
+                        <script>
+                            var welcomeTag = document.getElementById('welcome');
+                            var welcome = "Welcome to our store ";
+                            var spanW;
+                            var loop = 0;
+
+                            setInterval(() => {
+                                if (loop <= welcome.length - 1){
+                                    spanW = welcome.substring(0 , loop);
+                                    welcomeTag.innerHTML = "<span style='color: var(--black);font-size: 55px;'>" + spanW + "</span>" + welcome.substring(loop , welcome.length);
+                                }else {
+                                    welcomeTag.innerHTML = welcome;
+                                    loop=0;
+                                }
+                                loop++;
+                            }, 100);
+                        </script>
+                    </div>
+                    <div class="hi">
+                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quam odio deleniti impedit culpa dolores?</h4>
+                    </div>
+                    <div class="hi">
+                        <div class="search">
+                            <div class="left-search">
+                                <input type="text" placeholder="search" required>
+                            </div>
+                            <div class="right-search wcc">
+                                <button>Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-intro wcc">
+                    <div class="post-intro">
+                        <div class="top-post-intro">
+                            <div class="back-post wcc">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="512" height="512"><path d="M24,9a3,3,0,0,0-3-3H18A6,6,0,0,0,6,6H3A3,3,0,0,0,0,9V19a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5ZM8,6a4,4,0,0,1,8,0Z"/></svg>
+                            </div>
+                        </div>
+                        <div class="bottom-post-intro">
+                            <div class="info-post-intro">
+                                <p>Products</p>
+                            </div>
+                            <div class="info-post-intro">
+                                <h1>--.--$</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!--&posts-->
+    <section>
+        <article class="title">
+            <h1>Posts products</h1>
+        </article>
+        <article class="post-box">
+            <div class="post">
+                <div class="top-post">
+                    <img src="src/img/post3.png" alt="">
+                </div>
+                <div class="bottom-post">
+                    <div class="info-post">
+                        <p>Products</p>
+                    </div>
+                    <div class="info-post">
+                        <h1>10.00$</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="top-post">
+                    <img src="src/img/post3.png" alt="">
+                </div>
+                <div class="bottom-post">
+                    <div class="info-post">
+                        <p>Products</p>
+                    </div>
+                    <div class="info-post">
+                        <h1>10.00$</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="top-post">
+                    <img src="src/img/post3.png" alt="">
+                </div>
+                <div class="bottom-post">
+                    <div class="info-post">
+                        <p>Products</p>
+                    </div>
+                    <div class="info-post">
+                        <h1>10.00$</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="top-post">
+                    <img src="src/img/post3.png" alt="">
+                </div>
+                <div class="bottom-post">
+                    <div class="info-post">
+                        <p>Products</p>
+                    </div>
+                    <div class="info-post">
+                        <h1>10.00$</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="top-post">
+                    <img src="src/img/post3.png" alt="">
+                </div>
+                <div class="bottom-post">
+                    <div class="info-post">
+                        <p>Products</p>
+                    </div>
+                    <div class="info-post">
+                        <h1>10.00$</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="top-post">
+                    <img src="src/img/post3.png" alt="">
+                </div>
+                <div class="bottom-post">
+                    <div class="info-post">
+                        <p>Products</p>
+                    </div>
+                    <div class="info-post">
+                        <h1>10.00$</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="top-post">
+                    <img src="src/img/post3.png" alt="">
+                </div>
+                <div class="bottom-post">
+                    <div class="info-post">
+                        <p>Products</p>
+                    </div>
+                    <div class="info-post">
+                        <h1>10.00$</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="top-post">
+                    <img src="src/img/post3.png" alt="">
+                </div>
+                <div class="bottom-post">
+                    <div class="info-post">
+                        <p>Products</p>
+                    </div>
+                    <div class="info-post">
+                        <h1>10.00$</h1>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="room-box wcc">
+            <button class="roomX">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+        </article>
+    </section>
+    <!--&info-->
+    <section>
+        <article class="info-box">
+            <div class="info-left wcc">
+                <img src="src/img/store.png" alt="">
+            </div>
+            <div class="info-right wcc">
+                <div class="div-info">
+                    <h1>About store</h1>
+                </div>
+                <div class="div-info">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non qui, ad ratione in maxime quaerat et reiciendis tempore sit deleniti nesciunt error perspiciatis quasi consequuntur voluptate veniam iste commodi repudiandae?</p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!--&contact-->
+    <section>
+        <article class="contact-box">
+            <div class="left-contact wcc">
+                <div class="div-contact">
+                    <h1>What is your opinion about our store</h1>
+                </div>
+                <div class="div-contact">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non aperiam alias laboriosam eius sequi?</p>
+                </div>
+                <div class="div-contact">
+                    <button>Copy E-mail</button>
+                </div>
+            </div>
+            <div class="right-contact">
+                <form class="wcc">
+                    <div class="bord-inp">
+                        <input type="email" placeholder="E-mail" required>
+                    </div>
+                    <div class="bord-inp">
+                        <textarea placeholder="Text" required></textarea>
+                    </div>
+                    <div class="bord-inp">
+                        <button>Send message</button>
+                    </div>
+                </form>
+            </div>
+        </article>
+    </section>
+    <!--&footer-->
+    <footer>
+        <article class="foot-box">
+            <div class="top-foot wc-fs">
+                <div class="foot-logo wcc">
+                    <img src="src/img/post3.png" alt="">
+                </div>
+                <div class="foot-name wcc">
+                    <h1>Store.com</h1>
+                </div>
+            </div>
+            <div class="body-foot">
+                <div class="list">
+                    <div class="top-list">
+                        <h1>Social media</h1>
+                    </div>
+                    <div class="body-list">
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>Telegram</li>
+                            <li>X app</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="top-list">
+                        <h1>Contact</h1>
+                    </div>
+                    <div class="body-list">
+                        <ul>
+                            <li>+212 000000000</li>
+                            <li>+212 000000000</li>
+                            <li>exampleEmail@gmail.com</li>
+                            <li>exampleEmail@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="top-list">
+                        <h1>Breaf</h1>
+                    </div>
+                    <div class="body-list">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores dolore cum, magni quam eum optio eos voluptatibus commodi quaerat vel.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </footer>
+
+</body>
+</html>
